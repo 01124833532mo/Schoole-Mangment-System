@@ -1,59 +1,249 @@
-# Demo1
+# School Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+A modern **School Management System** built with a **.NET backend** and **Angular frontend**.  
+This application is designed to help schools manage students, teachers, classes, attendance, exams, fees, and announcements in one centralized platform.
 
-## Development server
+---
 
-To start a local development server, run:
+## Features
+
+- Student registration and profile management
+- Teacher and staff management
+- Class and section management
+- Attendance tracking
+- Exam and result management
+- Fee collection and payment tracking
+- Notice and announcement board
+- Role-based authentication and authorization
+- Interactive dashboard with statistics
+- Search, filter, and reporting tools
+- Responsive and user-friendly UI
+
+---
+
+## Tech Stack
+
+### Frontend
+- Angular
+- TypeScript
+- HTML5
+- CSS3 / SCSS
+- Bootstrap / Angular Material
+
+### Backend
+- ASP.NET Core
+- C#
+- Entity Framework Core
+- RESTful APIs
+- JWT Authentication
+
+### Database
+- SQL Server
+
+---
+
+## Project Structure
 
 ```bash
+project-root/
+├── backend/
+│   ├── Controllers/
+│   ├── Models/
+│   ├── Services/
+│   ├── Data/
+│   ├── Migrations/
+│   └── appsettings.json
+├── frontend/
+│   ├── src/
+│   ├── app/
+│   ├── assets/
+│   └── angular.json
+└── README.md
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [.NET SDK](https://dotnet.microsoft.com/download)
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
+- SQL Server
+
+---
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/01124833532mo/Schoole-Mangment-Sys.git
+cd Schoole-Mangment-Sys
+```
+
+### 2. Setup the backend
+
+Navigate to the backend folder and restore dependencies:
+
+```bash
+cd backend
+dotnet restore
+```
+
+Update your database connection string in `appsettings.json`:
+
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Database=SchoolManagementDB;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+```
+
+Apply migrations and run the backend:
+
+```bash
+dotnet ef database update
+dotnet run
+```
+
+### 3. Setup the frontend
+
+Open a new terminal and navigate to the frontend folder:
+
+```bash
+cd frontend
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The Angular app will usually run at:
 
 ```bash
-ng generate component component-name
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The backend API will usually run at:
 
 ```bash
-ng generate --help
+http://localhost:5000
 ```
 
-## Building
+---
 
-To build the project run:
+## Usage
+
+1. Launch the backend API.
+2. Start the Angular frontend.
+3. Log in as an admin, teacher, or staff member.
+4. Manage school data from the dashboard.
+5. View reports, attendance, exams, and fee information.
+
+---
+
+## API Overview
+
+> Add your API endpoints here once finalized.
+
+Example endpoints:
+
+- `GET /api/students`
+- `POST /api/students`
+- `GET /api/teachers`
+- `POST /api/attendance`
+- `GET /api/exams/results`
+
+---
+
+## Environment Variables
+
+### Backend `.env` or `appsettings.json`
+```json
+{
+  "Jwt": {
+    "Key": "your-secret-key",
+    "Issuer": "your-issuer",
+    "Audience": "your-audience"
+  }
+}
+```
+
+### Frontend `environment.ts`
+```ts
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:5000/api'
+};
+```
+
+---
+
+## Features in Detail
+
+### Admin
+- Manage users and permissions
+- Add/edit students, teachers, and classes
+- Generate reports
+- Monitor school operations
+
+### Teacher
+- Take attendance
+- Enter marks
+- View assigned classes
+- Publish remarks and results
+
+### Student / Parent
+- View attendance
+- Check exam results
+- Read notices
+- Track fee status
+
+---
+
+## Screenshots
+
+> Add your project screenshots here.
+
+```md
+![Login](assets/screenshots/login.png)
+![Dashboard](assets/screenshots/dashboard.png)
+![Students](assets/screenshots/students.png)
+```
+
+---
+
+## Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
 
 ```bash
-ng build
+git checkout -b feature/your-feature
+git commit -m "Add your feature"
+git push origin feature/your-feature
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## License
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+This project is licensed under the MIT License.  
+See the `LICENSE` file for more details.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## Contact
 
-For end-to-end (e2e) testing, run:
+- **GitHub:** [01124833532mo](https://github.com/01124833532mo)
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Acknowledgements
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Thanks to everyone who helped build and improve this project.
