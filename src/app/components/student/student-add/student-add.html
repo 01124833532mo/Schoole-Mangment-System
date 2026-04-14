@@ -1,0 +1,15 @@
+<br>
+name<input type="text" [(ngModel)]="std.name"><br>
+age<input type="number" [(ngModel)]="std.age"><br>
+address<input type="text" [(ngModel)]="std.address"><br>
+department <select [(ngModel)]="std.departmentId">
+    @for (item of depts(); track item.id) {
+        <option [ngValue]="item.id">{{item.name}}</option>
+    }
+    </select>
+    <br>
+
+<button (click)="save()">save</button>
+@if (errorMessage()) {
+    <p class="text-danger">{{errorMessage()}}</p>
+}

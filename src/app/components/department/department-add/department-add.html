@@ -1,0 +1,8 @@
+<br>
+name<input type="text" [(ngModel)]="dept.name"><br>
+location<input type="text" [(ngModel)]="dept.location"><br>
+<button (click)="save()">save</button>
+
+@if (errorMessage()) {
+  <p class="text-danger">{{errorMessage()}}</p>
+}

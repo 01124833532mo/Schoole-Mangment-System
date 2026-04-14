@@ -1,0 +1,71 @@
+.top-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.app-navbar {
+    background: linear-gradient(110deg, #1b4332, #2d6a4f);
+    box-shadow: 0 8px 20px rgba(23, 56, 42, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.brand {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.brand:hover {
+    color: #fff;
+}
+
+.brand-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    font-size: 0.8rem;
+}
+
+.nav-links .nav-link {
+    color: rgba(255, 255, 255, 0.88);
+    border-radius: 999px;
+    padding: 6px 12px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.auth-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user-pill {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 991px) {
+    .auth-actions {
+        margin-top: 12px;
+    }
+}

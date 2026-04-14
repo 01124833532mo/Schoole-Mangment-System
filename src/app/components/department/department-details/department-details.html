@@ -1,0 +1,18 @@
+<p>department-details works!</p>
+<h1 class="alert alert-primary">
+  {{dept().id}} - {{dept().name}} - {{dept().location}} - {{dept().studentsCount}}
+</h1>
+
+<div>
+  <label>
+    name
+    <input type="text" [(ngModel)]="editDept.name">
+  </label>
+  <br>
+  <label>
+    location
+    <input type="text" [(ngModel)]="editDept.location">
+  </label>
+  <br>
+  <button (click)="updateDepartment()">Update</button>
+</div>

@@ -1,0 +1,30 @@
+<section class="auth-wrap">
+	<form class="auth-card" [formGroup]="registerForm" (ngSubmit)="save()">
+		<h2>Register</h2>
+
+		<label>Username</label>
+		<input type="text" formControlName="userName" class="form-control" />
+		@if (registerForm.controls.userName.touched && registerForm.controls.userName.invalid) {
+			<small class="text-danger">Username must be at least 3 characters.</small>
+		}
+
+		<label>Email</label>
+		<input type="email" formControlName="email" class="form-control" />
+		@if (registerForm.controls.email.touched && registerForm.controls.email.invalid) {
+			<small class="text-danger">Enter a valid email.</small>
+		}
+
+		<label>Password</label>
+		<input type="password" formControlName="password" class="form-control" />
+		@if (registerForm.controls.password.touched && registerForm.controls.password.invalid) {
+			<small class="text-danger">Password must be at least 6 characters.</small>
+		}
+
+		<button class="btn btn-success" type="submit">Register</button>
+
+		@if (errorMessage()) {
+			<p class="text-danger mt-2">{{errorMessage()}}</p>
+		}
+	</form>
+</section>
+

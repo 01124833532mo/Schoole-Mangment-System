@@ -1,0 +1,29 @@
+<p>student-details works!</p>
+<h1 class="alert alert-danger">
+
+    {{std().id}}-{{std().name}}-{{std().age}} -{{std().address}} - {{std().departmentName}} - {{std().supervisorName}}
+</h1>
+<div>
+    <label>
+        name
+        <input type="text" [(ngModel)]="editStudent.name">
+    </label>
+    <br>
+    <label>
+        age
+        <input type="number" [(ngModel)]="editStudent.age">
+    </label>
+    <br>
+    <label>
+        address
+        <input type="text" [(ngModel)]="editStudent.address">
+    </label>
+    <br>
+    <label>
+        departmentId
+        <input type="number" [(ngModel)]="editStudent.departmentId">
+    </label>
+    <br>
+    <button (click)="updateStudent()">Update</button>
+</div>
+

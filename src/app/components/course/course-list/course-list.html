@@ -1,0 +1,36 @@
+<br>
+<a [routerLink]="['/courses/add']">Course Add</a>
+
+<div class="table-responsive">
+  <table class="table table-striped table-hover table-borderless table-primary align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Duration</th>
+        <th>Topic Id</th>
+        <th>Department Id</th>
+        <th>Department Name</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      @for (item of courses(); track item.id) {
+      <tr class="table-primary">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.duration}}</td>
+        <td>{{item.topId}}</td>
+        <td>{{item.departmentId}}</td>
+        <td>{{item.department?.name || '-'}}</td>
+        <td>{{item.courseDesc}}</td>
+        <td>
+          <a [routerLink]="['/courses/details', item.id]" class="btn btn-info">Details</a>
+          <button class="btn btn-danger" (click)="deleteCourse(item.id)">Delete</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

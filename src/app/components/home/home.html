@@ -1,0 +1,22 @@
+<section class="home-shell">
+
+	<div class="students-preview">
+		<div class="preview-head">
+			<h2>Latest Students</h2>
+			<a routerLink="/students" class="view-all">View all</a>
+		</div>
+
+		<div class="row g-3">
+			@for (item of students(); track item.id) {
+				<div class="col-12 col-md-6 col-xl-3">
+					<article class="student-card">
+						<h3>{{item.name}}</h3>
+						<p>Age: {{item.age}}</p>
+						<p>Department: {{item.departmentName}}</p>
+						<p>Address: {{item.address}}</p>
+					</article>
+				</div>
+			}
+		</div>
+	</div>
+</section>

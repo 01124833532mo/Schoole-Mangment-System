@@ -1,0 +1,30 @@
+<br>
+<a [routerLink]="['/departments/add']">Department Add</a>
+
+<div class="table-responsive">
+  <table class="table table-striped table-hover table-borderless table-primary align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Students Count</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      @for (item of departments(); track item.id) {
+      <tr class="table-primary">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.location}}</td>
+        <td>{{item.studentsCount}}</td>
+        <td>
+          <a [routerLink]="['/departments/details', item.id]" class="btn btn-info">Details</a>
+          <button class="btn btn-danger" (click)="deleteDepartment(item.id)">Delete</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

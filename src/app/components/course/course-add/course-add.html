@@ -1,0 +1,10 @@
+<br>
+name<input type="text" [(ngModel)]="course.name"><br>
+duration<input type="number" [(ngModel)]="course.duration"><br>
+topic id<input type="number" [(ngModel)]="course.topId"><br>
+description<input type="text" [(ngModel)]="course.courseDesc"><br>
+<button (click)="save()">save</button>
+
+@if (errorMessage()) {
+  <p class="text-danger">{{errorMessage()}}</p>
+}
