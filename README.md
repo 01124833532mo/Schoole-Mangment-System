@@ -182,12 +182,6 @@ export const environment = {
 
 ## Features in Detail
 
-### Admin
-- Manage users and permissions
-- Add/edit students, teachers, and classes
-- Generate reports
-- Monitor school operations
-
 ### Teacher
 - Take attendance
 - Enter marks
@@ -201,16 +195,6 @@ export const environment = {
 - Track fee status
 
 ---
-
-## Screenshots
-
-> Add your project screenshots here.
-
-```md
-![Login](assets/screenshots/login.png)
-![Dashboard](assets/screenshots/dashboard.png)
-![Students](assets/screenshots/students.png)
-```
 
 ---
 
