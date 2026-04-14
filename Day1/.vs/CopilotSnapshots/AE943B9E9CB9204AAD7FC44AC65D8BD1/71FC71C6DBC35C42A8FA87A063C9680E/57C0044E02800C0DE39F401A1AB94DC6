@@ -1,0 +1,142 @@
+﻿using System.Windows.Forms;
+
+namespace CourseUii
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            CoursesView = new DataGridView();
+            textBox1 = new TextBox();
+            desc = new TextBox();
+            dur = new TextBox();
+            Name = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            Add = new Button();
+            ((System.ComponentModel.ISupportInitialize)CoursesView).BeginInit();
+            SuspendLayout();
+            // 
+            // CoursesView
+            // 
+            CoursesView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            CoursesView.Location = new Point(1, 210);
+            CoursesView.Name = "CoursesView";
+            CoursesView.RowHeadersWidth = 51;
+            CoursesView.Size = new Size(760, 188);
+            CoursesView.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(605, 25);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 1;
+            // 
+            // desc
+            // 
+            desc.Location = new Point(605, 58);
+            desc.Name = "desc";
+            desc.Size = new Size(125, 27);
+            desc.TabIndex = 2;
+            // 
+            // dur
+            // 
+            dur.Location = new Point(605, 91);
+            dur.Name = "dur";
+            dur.Size = new Size(125, 27);
+            dur.TabIndex = 3;
+            // 
+            // Name
+            // 
+            Name.AutoSize = true;
+            Name.Location = new Point(515, 32);
+            Name.Name = "Name";
+            Name.Size = new Size(49, 20);
+            Name.TabIndex = 4;
+            Name.Text = "Name";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(515, 61);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 20);
+            label2.TabIndex = 5;
+            label2.Text = "Description";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(515, 94);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 20);
+            label3.TabIndex = 6;
+            label3.Text = "Duration";
+            // 
+            // Add
+            // 
+            Add.Location = new Point(625, 139);
+            Add.Name = "Add";
+            Add.Size = new Size(94, 29);
+            Add.TabIndex = 7;
+            Add.Text = "Add";
+            Add.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Add);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(Name);
+            Controls.Add(dur);
+            Controls.Add(desc);
+            Controls.Add(textBox1);
+            Controls.Add(CoursesView);
+            this.Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)CoursesView).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private DataGridView CoursesView;
+        private TextBox textBox1;
+        private TextBox desc;
+        private TextBox dur;
+        private Label Name;
+        private Label label2;
+        private Label label3;
+        private Button Add;
+    }
+}

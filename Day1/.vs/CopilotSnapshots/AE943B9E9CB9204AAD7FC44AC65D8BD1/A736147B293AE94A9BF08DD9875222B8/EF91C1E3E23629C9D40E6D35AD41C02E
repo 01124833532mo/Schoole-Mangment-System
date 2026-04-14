@@ -1,0 +1,50 @@
+﻿using Day1.Mapping;
+using Day1.Models;
+using Day1.Repositories;
+using Microsoft.EntityFrameworkCore;
+
+namespace Day1
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+            const string CorsPolicyName = "AllowAll";
+
+            // Add services to the container.
+            builder.Services.AddControllers();
+            builder.Services.AddOpenApi();
+            builder.Services.AddDbContext<ITIContext>(op =>
+                op.UseSqlServer(builder.Configuration.GetConnectionString("iticon")));
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddAutoMapper(typeof(ApiMappingProfile).Assembly);
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(CorsPolicyName, policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (app.Environment.IsDevelopment())
+            {
+                app.MapOpenApi();
+                app.UseSwaggerUI(op => op.SwaggerEndpoint("/openapi/v1.json", "v1"));
+            }
+
+            app.UseHttpsRedirection();
+            app.UseCors(CorsPolicyName);
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            app.Run();
+        }
+    }
+}

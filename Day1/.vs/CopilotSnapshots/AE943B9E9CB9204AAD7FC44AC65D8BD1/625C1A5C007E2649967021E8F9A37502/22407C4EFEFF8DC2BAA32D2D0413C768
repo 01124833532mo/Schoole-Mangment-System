@@ -1,0 +1,144 @@
+﻿using System.Net.Http.Json;
+
+namespace CourseUii
+{
+    public partial class Form1 : Form
+    {
+        private readonly HttpClient _httpClient;
+        private const string ApiBaseUrl = "https://localhost:7073/api";
+
+        public Form1()
+        {
+            InitializeComponent();
+
+            // Bypass SSL certificate validation for local development
+            var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+            };
+
+            // Initialize HttpClient with timeout and custom handler
+            _httpClient = new HttpClient(handler);
+            _httpClient.Timeout = TimeSpan.FromSeconds(30);
+        }
+
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            await LoadCourses();
+        }
+
+        private async Task LoadCourses()
+        {
+            try
+            {
+                UpdateStatus("Loading courses...");
+
+                var response = await _httpClient.GetAsync($"{ApiBaseUrl}/course");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var courses = await response.Content.ReadFromJsonAsync<List<CourseDto>>();
+
+                    dataGridViewCourses.DataSource = courses;
+                    UpdateStatus($"Loaded {courses?.Count ?? 0}");
+                }
+                else
+                {
+                    MessageBox.Show($"Error loading courses: {response.StatusCode}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    UpdateStatus("Failed to load courses.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                UpdateStatus("Error loading courses.");
+            }
+        }
+
+        private async void btnRefresh_Click(object sender, EventArgs e)
+        {
+            await LoadCourses();
+        }
+
+        private async void btnCreate_Click(object sender, EventArgs e)
+        {
+            if (!ValidateCreateForm())
+                return;
+
+            try
+            {
+                UpdateStatus("Creating course...");
+
+                var newCourse = new CourseDto
+                {
+                    name = txtCourseName.Text.Trim(),
+                    Duration = int.Parse(txtDuration.Text),
+                    CourseDesc = txtDescription.Text.Trim()
+                };
+
+                var response = await _httpClient.PostAsJsonAsync($"{ApiBaseUrl}/course", newCourse);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Course created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearCreateForm();
+                    await LoadCourses();
+                    UpdateStatus("Course created successfully.");
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Error creating course: {response.StatusCode}\n{errorContent}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    UpdateStatus("Failed to create course.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                UpdateStatus("Error creating course.");
+            }
+        }
+
+        private bool ValidateCreateForm()
+        {
+            if (string.IsNullOrWhiteSpace(txtCourseName.Text))
+            {
+                MessageBox.Show("Course name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!int.TryParse(txtDuration.Text, out int duration) || duration <= 0)
+            {
+                MessageBox.Show("Duration must be a positive number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void ClearCreateForm()
+        {
+            txtCourseName.Text = string.Empty;
+            txtDuration.Text = string.Empty;
+            txtDescription.Text = string.Empty;
+            txtCourseName.Focus();
+        }
+
+        private void UpdateStatus(string message)
+        {
+            toolStripStatusLabel.Text = $"{message} - {DateTime.Now:HH:mm:ss}";
+        }
+    }
+
+    /// <summary>
+    /// Data Transfer Object for Course API
+    /// </summary>
+    public class CourseDto
+    {
+        public int id { get; set; }
+        public string name { get; set; } = string.Empty;
+        public int Duration { get; set; }
+        public int? TopId { get; set; }
+        public string? CourseDesc { get; set; }
+    }
+}

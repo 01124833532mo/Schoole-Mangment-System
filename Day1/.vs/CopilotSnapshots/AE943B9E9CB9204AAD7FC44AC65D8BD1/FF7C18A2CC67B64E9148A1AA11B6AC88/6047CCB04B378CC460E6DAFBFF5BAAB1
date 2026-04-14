@@ -1,0 +1,12 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "iticon": "Data Source=DESKTOP-DT2EJFN;Initial Catalog=ITIDB;Integrated Security=True;Trust Server Certificate=True"
+  }
+}

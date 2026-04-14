@@ -1,0 +1,537 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\models\\iticontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\models\\iticontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\migrations\\20260401133605_addidentityandjwtauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\migrations\\20260401133605_addidentityandjwtauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\migrations\\iticontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\migrations\\iticontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D42E5AF-9B01-4198-B27C-77C51F95C533}|CourseUii\\CourseUii.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\courseuii\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D42E5AF-9B01-4198-B27C-77C51F95C533}|CourseUii\\CourseUii.csproj|solutionrelative:courseuii\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D42E5AF-9B01-4198-B27C-77C51F95C533}|CourseUii\\CourseUii.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\courseuii\\coursesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D42E5AF-9B01-4198-B27C-77C51F95C533}|CourseUii\\CourseUii.csproj|solutionrelative:courseuii\\coursesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\mapping\\apimappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\mapping\\apimappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\studentupsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\studentupsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\day1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\day1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\departmentupsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\departmentupsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D42E5AF-9B01-4198-B27C-77C51F95C533}|CourseUii\\CourseUii.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\courseuii\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D42E5AF-9B01-4198-B27C-77C51F95C533}|CourseUii\\CourseUii.csproj|solutionrelative:courseuii\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|c:\\users\\hp\\downloads\\demo-20260329t122130z-1-001\\demo\\day1\\day1\\day1\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A9D319F-27B0-407E-9844-E7350EC4A08E}|Day1\\Day1.csproj|solutionrelative:day1\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITIContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Migrations\\ITIContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Day1\\Migrations\\ITIContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Migrations\\ITIContextModelSnapshot.cs",
+              "RelativeToolTip": "Day1\\Migrations\\ITIContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:39:45.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITIContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\ITIContext.cs",
+              "RelativeDocumentMoniker": "Day1\\Models\\ITIContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\ITIContext.cs",
+              "RelativeToolTip": "Day1\\Models\\ITIContext.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAMBUwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:44:49.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Day1\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Day1\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:23:25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\appsettings.json",
+              "RelativeDocumentMoniker": "Day1\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\appsettings.json",
+              "RelativeToolTip": "Day1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-29T12:53:07.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:21:42.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:22:01.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "courseController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\courseController.cs",
+              "RelativeDocumentMoniker": "Day1\\Controllers\\courseController.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\courseController.cs",
+              "RelativeToolTip": "Day1\\Controllers\\courseController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAtwIIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:56:35.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20260401133605_AddIdentityAndJwtAuth.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Migrations\\20260401133605_AddIdentityAndJwtAuth.cs",
+              "RelativeDocumentMoniker": "Day1\\Migrations\\20260401133605_AddIdentityAndJwtAuth.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Migrations\\20260401133605_AddIdentityAndJwtAuth.cs",
+              "RelativeToolTip": "Day1\\Migrations\\20260401133605_AddIdentityAndJwtAuth.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:39:52.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\AuthResponseDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:22:32.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Day1\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Day1\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:21:12.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "studentsController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\studentsController.cs",
+              "RelativeDocumentMoniker": "Day1\\Controllers\\studentsController.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\studentsController.cs",
+              "RelativeToolTip": "Day1\\Controllers\\studentsController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAABBwIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T10:35:51.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Day1\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Day1\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T16:20:42.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Day1\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "Day1\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T16:20:21.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Day1\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "Day1\\Repositories\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T16:20:48.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Day1\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "Day1\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T16:20:55.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Day1\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Day1\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T11:28:14.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\CourseUii\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CourseUii\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\CourseUii\\Form1.Designer.cs",
+              "RelativeToolTip": "CourseUii\\Form1.Designer.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAjwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T16:54:54.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\CourseUii\\Form1.cs",
+              "RelativeDocumentMoniker": "CourseUii\\Form1.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\CourseUii\\Form1.cs",
+              "RelativeToolTip": "CourseUii\\Form1.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAGBmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T16:57:54.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CoursesData.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\CourseUii\\CoursesData.cs",
+              "RelativeDocumentMoniker": "CourseUii\\CoursesData.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\CourseUii\\CoursesData.cs",
+              "RelativeToolTip": "CourseUii\\CoursesData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T16:54:13.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Day1\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\Student.cs",
+              "RelativeToolTip": "Day1\\Models\\Student.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:46:31.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PagedResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\PagedResultDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\PagedResultDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\PagedResultDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\PagedResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:18:01.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Program.cs",
+              "RelativeDocumentMoniker": "Day1\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Program.cs",
+              "RelativeToolTip": "Day1\\Program.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAEBVwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T10:34:09.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApiMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Mapping\\ApiMappingProfile.cs",
+              "RelativeDocumentMoniker": "Day1\\Mapping\\ApiMappingProfile.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Mapping\\ApiMappingProfile.cs",
+              "RelativeToolTip": "Day1\\Mapping\\ApiMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:18:09.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Day1\\Models\\Department.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\Department.cs",
+              "RelativeToolTip": "Day1\\Models\\Department.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAMBcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:21:57.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DepartmentUpsertDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\DepartmentUpsertDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\DepartmentUpsertDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\DepartmentUpsertDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\DepartmentUpsertDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:19:10.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StudentUpsertDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\StudentUpsertDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\StudentUpsertDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\StudentUpsertDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\StudentUpsertDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:17:53.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\DepartmentDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\DepartmentDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\DepartmentDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\DepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:17:57.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\StudentDto.cs",
+              "RelativeDocumentMoniker": "Day1\\DTOs\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\DTOs\\StudentDto.cs",
+              "RelativeToolTip": "Day1\\DTOs\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:17:48.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "course.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\course.cs",
+              "RelativeDocumentMoniker": "Day1\\Models\\course.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Models\\course.cs",
+              "RelativeToolTip": "Day1\\Models\\course.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIBgwA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:51:34.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "efpt.config.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\efpt.config.json",
+              "RelativeDocumentMoniker": "Day1\\efpt.config.json",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\efpt.config.json",
+              "RelativeToolTip": "Day1\\efpt.config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-29T12:44:23.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Day1.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Day1.csproj",
+              "RelativeDocumentMoniker": "Day1\\Day1.csproj",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\Demo-20260329T122130Z-1-001\\Demo\\Day1\\Day1\\Day1\\Day1.csproj",
+              "RelativeToolTip": "Day1\\Day1.csproj",
+              "ViewState": "AgIAABkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-29T12:44:01.868Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

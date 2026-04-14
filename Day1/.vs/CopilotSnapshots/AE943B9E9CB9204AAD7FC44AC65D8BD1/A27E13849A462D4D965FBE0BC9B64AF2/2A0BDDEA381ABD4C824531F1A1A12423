@@ -1,0 +1,130 @@
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Day1.DTOs;
+using Day1.Models;
+using Day1.Repositories;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Day1.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class studentsController : ControllerBase
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public studentsController(IUnitOfWork unitOfWork, IMapper mapper)
+        {
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<PagedResultDto<StudentDto>>> GetAll(
+            [FromQuery] string? search,
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 10)
+        {
+            if (pageNumber <= 0) pageNumber = 1;
+            if (pageSize <= 0) pageSize = 10;
+            if (pageSize > 100) pageSize = 100;
+
+            IQueryable<Student> query = _unitOfWork.Students
+                .GetQueryable()
+                .AsNoTracking()
+                .Include(s => s.dept)
+                .Include(s => s.Supervisor);
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                string term = search.Trim();
+                query = query.Where(s =>
+                    s.name.Contains(term) ||
+                    (s.adddress != null && s.adddress.Contains(term)));
+            }
+
+            int totalCount = await query.CountAsync();
+
+            List<StudentDto> students = await query
+                .OrderBy(s => s.ID)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ProjectTo<StudentDto>(_mapper.ConfigurationProvider)
+                .ToListAsync();
+
+            return Ok(new PagedResultDto<StudentDto>
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalCount = totalCount,
+                Items = students
+            });
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<StudentDto>> GetById(int id)
+        {
+            StudentDto? student = await _unitOfWork.Students
+                .GetQueryable()
+                .AsNoTracking()
+                .Include(s => s.dept)
+                .Include(s => s.Supervisor)
+                .Where(s => s.ID == id)
+                .ProjectTo<StudentDto>(_mapper.ConfigurationProvider)
+                .FirstOrDefaultAsync();
+
+            if (student is null) return NotFound();
+            return Ok(student);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<StudentDto>> Add(StudentUpsertDto dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            Student student = _mapper.Map<Student>(dto);
+            student.ID = (await _unitOfWork.Students.GetQueryable().MaxAsync(s => (int?)s.ID) ?? 0) + 1;
+
+            await _unitOfWork.Students.AddAsync(student);
+            await _unitOfWork.SaveChangesAsync();
+
+            StudentDto result = await _unitOfWork.Students
+                .GetQueryable()
+                .AsNoTracking()
+                .Include(s => s.dept)
+                .Include(s => s.Supervisor)
+                .Where(s => s.ID == student.ID)
+                .ProjectTo<StudentDto>(_mapper.ConfigurationProvider)
+                .FirstAsync();
+
+            return CreatedAtAction(nameof(GetById), new { id = student.ID }, result);
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> Update(int id, StudentUpsertDto dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            Student? existing = await _unitOfWork.Students.GetByIdAsync(id);
+            if (existing is null) return NotFound();
+
+            _mapper.Map(dto, existing);
+            _unitOfWork.Students.Update(existing);
+            await _unitOfWork.SaveChangesAsync();
+            return NoContent();
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            Student? student = await _unitOfWork.Students.GetByIdAsync(id);
+            if (student is null) return NotFound();
+
+            _unitOfWork.Students.Delete(student);
+            await _unitOfWork.SaveChangesAsync();
+            return NoContent();
+        }
+    }
+}

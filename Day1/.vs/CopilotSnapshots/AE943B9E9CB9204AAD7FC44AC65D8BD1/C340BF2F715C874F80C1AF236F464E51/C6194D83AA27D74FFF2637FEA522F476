@@ -1,0 +1,86 @@
+﻿using Day1.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Day1.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class courseController : ControllerBase
+    {
+
+        private readonly ITIContext db;
+
+        public courseController(ITIContext db)
+        {
+            this.db = db;
+        }
+
+        [HttpGet]
+        public ActionResult get()
+        {
+            List<course> courses = db.Courses.ToList();
+            if (!courses.Any()) return NotFound();
+            return Ok(courses);
+        }
+
+        [HttpDelete("{id:int}")]
+        public ActionResult deleteCourse(int id)
+        {
+            course c = db.Courses.FirstOrDefault(n => n.id == id);
+            if (c == null) return NotFound();
+
+            db.Courses.Remove(c);
+            db.SaveChanges();
+
+            return Ok(db.Courses.ToList());
+        }
+
+        [HttpPut("{id:int}")]
+        public ActionResult put(int id, course c)
+        {
+            if (c == null) return BadRequest();
+            if (id != c.id) return BadRequest();
+
+            course oldCourse = db.Courses.FirstOrDefault(n => n.id == id);
+            if (oldCourse == null) return NotFound();
+
+            oldCourse.name = c.name;
+            oldCourse.CourseDesc = c.CourseDesc;
+            oldCourse.Duration = c.Duration;
+
+            db.SaveChanges();
+            return NoContent();
+        }
+
+        [HttpPost]
+        public ActionResult post(course c)
+        {
+            if (c == null) return BadRequest();
+
+            c.id = (db.Courses.Max(n => (int?)n.id) ?? 0) + 1;
+
+            db.Courses.Add(c);
+            db.SaveChanges();
+
+            return StatusCode(StatusCodes.Status201Created, c);
+        }
+
+        [HttpGet("{id:int}")]
+        public ActionResult getById(int id)
+        {
+            course c = db.Courses.FirstOrDefault(n => n.id == id);
+            if (c == null) return NotFound();
+
+            return Ok(c);
+        }
+
+        [HttpGet("byname/{name}")]
+        public ActionResult couseByName(string name)
+        {
+            course c = db.Courses.FirstOrDefault(n => n.name == name);
+            if (c == null) return NotFound();
+
+            return Ok(c);
+        }
+    }
+}

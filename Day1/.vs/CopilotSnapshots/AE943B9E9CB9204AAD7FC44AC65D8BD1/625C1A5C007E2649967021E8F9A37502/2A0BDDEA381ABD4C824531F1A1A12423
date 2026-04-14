@@ -1,0 +1,76 @@
+﻿using Day1.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Day1.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class studentsController : ControllerBase
+    {
+        ITIContext db;
+        public studentsController(ITIContext db)
+        {
+            this.db = db;
+        }
+
+        [HttpGet]
+        public List<Student> Getall()
+        {
+            return db.Students.ToList();
+        }
+        [HttpGet("{id:int}")]
+        public ActionResult getbyid(int id)
+        {
+           Student s= db.Students.Where(n => n.ID == id).FirstOrDefault();
+            if (s == null) return NotFound();
+            else return Ok(s);
+        }
+      //  [HttpGet("/api/sts/{name}")]
+        [HttpGet("{name:alpha}")]
+        public ActionResult getbyname(string name)
+        {
+            Student s = db.Students.Where(n => n.name==name).FirstOrDefault();
+            if (s == null) return NotFound();
+            else return Ok(s);
+        }
+
+        [HttpPost]
+        public ActionResult add(Student s)
+        {
+            if (s == null) return BadRequest();
+            db.Students.Add(s);
+            db.SaveChanges();
+            // return Created("ay7aga", s);
+            return CreatedAtAction("getbyid", new { id = s.ID }, s);
+        }
+        [HttpPut("{id}")]
+        public ActionResult update(int id ,Student s) { 
+        
+        if(s == null) return BadRequest();
+        if(id!=s.ID) return BadRequest();
+
+            if (ModelState.IsValid)
+            {
+                db.Entry(s).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                db.SaveChanges();
+
+                return NoContent();
+            }
+            else return BadRequest(ModelState);
+        
+        }
+
+
+        [HttpDelete("{id}")]
+        public ActionResult delete(int id)
+        {
+            Student s=db.Students.FirstOrDefault(n=>n.ID == id);
+            if (s == null) return NotFound();
+            db.Students.Remove(s);
+            db.SaveChanges();
+            return Ok(s);
+        }
+
+    }
+}

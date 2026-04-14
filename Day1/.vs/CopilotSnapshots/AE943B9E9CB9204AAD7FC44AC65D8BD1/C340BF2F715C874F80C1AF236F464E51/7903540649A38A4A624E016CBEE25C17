@@ -1,0 +1,32 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Day1.Models
+{
+    [Table("course")]
+    public class course
+    {
+        [Key]
+        [Column("Crs_Id")]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int id { get; set; }
+
+        [Column("Crs_Name")]
+        public string name { get; set; } = string.Empty;
+
+        [Column("Crs_Duration")]
+        public int Duration { get; set; }
+
+        [Column("Top_Id")]
+        public int? TopId { get; set; }
+
+        [Column("Dept_Id")]
+        public int? DepartmentId { get; set; }
+
+        [ForeignKey(nameof(DepartmentId))]
+        public virtual Department? Department { get; set; }
+
+        [NotMapped]
+        public string? CourseDesc { get; set; }
+    }
+}

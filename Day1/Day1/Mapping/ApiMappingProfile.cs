@@ -1,0 +1,36 @@
+using AutoMapper;
+using Day1.DTOs;
+using Day1.Models;
+
+namespace Day1.Mapping;
+
+public class ApiMappingProfile : Profile
+{
+    public ApiMappingProfile()
+    {
+        CreateMap<Student, StudentDto>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ID))
+            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.name))
+            .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.adddress))
+            .ForMember(dest => dest.DepartmentId, opt => opt.MapFrom(src => src.deptid))
+            .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.dept != null ? src.dept.name : null))
+            .ForMember(dest => dest.SupervisorName, opt => opt.MapFrom(src => src.Supervisor != null ? src.Supervisor.name : "Not Assigned"));
+
+        CreateMap<StudentUpsertDto, Student>()
+            .ForMember(dest => dest.ID, opt => opt.Ignore())
+            .ForMember(dest => dest.name, opt => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.adddress, opt => opt.MapFrom(src => src.Address))
+            .ForMember(dest => dest.deptid, opt => opt.MapFrom(src => src.DepartmentId));
+
+        CreateMap<Department, DepartmentDto>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ID))
+            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.name))
+            .ForMember(dest => dest.Location, opt => opt.MapFrom(src => src.Loc))
+            .ForMember(dest => dest.StudentsCount, opt => opt.MapFrom(src => src.Students.Count));
+
+        CreateMap<DepartmentUpsertDto, Department>()
+            .ForMember(dest => dest.ID, opt => opt.Ignore())
+            .ForMember(dest => dest.name, opt => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.Loc, opt => opt.MapFrom(src => src.Location));
+    }
+}

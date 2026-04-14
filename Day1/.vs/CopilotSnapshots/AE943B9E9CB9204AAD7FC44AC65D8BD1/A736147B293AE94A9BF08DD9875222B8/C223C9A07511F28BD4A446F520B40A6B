@@ -1,0 +1,91 @@
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Day1.DTOs;
+using Day1.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Day1.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class DepartmentController : ControllerBase
+    {
+        private readonly ITIContext _db;
+        private readonly IMapper _mapper;
+
+        public DepartmentController(ITIContext db, IMapper mapper)
+        {
+            _db = db;
+            _mapper = mapper;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<DepartmentDto>>> GetAll()
+        {
+            List<DepartmentDto> departments = await _db.Departments
+                .AsNoTracking()
+                .ProjectTo<DepartmentDto>(_mapper.ConfigurationProvider)
+                .ToListAsync();
+
+            return Ok(departments);
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<DepartmentDto>> GetById(int id)
+        {
+            DepartmentDto? department = await _db.Departments
+                .AsNoTracking()
+                .Where(d => d.ID == id)
+                .ProjectTo<DepartmentDto>(_mapper.ConfigurationProvider)
+                .FirstOrDefaultAsync();
+
+            if (department is null) return NotFound();
+            return Ok(department);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<DepartmentDto>> Add(DepartmentUpsertDto dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            Department department = _mapper.Map<Department>(dto);
+            department.ID = (await _db.Departments.MaxAsync(d => (int?)d.ID) ?? 0) + 1;
+
+            _db.Departments.Add(department);
+            await _db.SaveChangesAsync();
+
+            DepartmentDto result = await _db.Departments
+                .AsNoTracking()
+                .Where(d => d.ID == department.ID)
+                .ProjectTo<DepartmentDto>(_mapper.ConfigurationProvider)
+                .FirstAsync();
+
+            return CreatedAtAction(nameof(GetById), new { id = department.ID }, result);
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> Update(int id, DepartmentUpsertDto dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            Department? existing = await _db.Departments.FirstOrDefaultAsync(d => d.ID == id);
+            if (existing is null) return NotFound();
+
+            _mapper.Map(dto, existing);
+            await _db.SaveChangesAsync();
+            return NoContent();
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            Department? department = await _db.Departments.FirstOrDefaultAsync(d => d.ID == id);
+            if (department is null) return NotFound();
+
+            _db.Departments.Remove(department);
+            await _db.SaveChangesAsync();
+            return NoContent();
+        }
+    }
+}

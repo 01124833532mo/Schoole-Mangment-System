@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Day1</name>
+    </assembly>
+    <members>
+        <member name="M:Day1.Controllers.DepartmentController.GetAll">
+            <summary>
+            Gets all departments with number of students in each department.
+            </summary>
+        </member>
+        <member name="M:Day1.Controllers.DepartmentController.GetById(System.Int32)">
+            <summary>
+            Gets a department by id.
+            </summary>
+            <param name="id">Department id.</param>
+        </member>
+        <member name="M:Day1.Controllers.DepartmentController.Add(Day1.DTOs.DepartmentUpsertDto)">
+            <summary>
+            Creates a new department.
+            </summary>
+        </member>
+        <member name="M:Day1.Controllers.DepartmentController.Update(System.Int32,Day1.DTOs.DepartmentUpsertDto)">
+            <summary>
+            Updates an existing department.
+            </summary>
+            <param name="id">Department id.</param>
+        </member>
+        <member name="M:Day1.Controllers.DepartmentController.Delete(System.Int32)">
+            <summary>
+            Deletes a department by id.
+            </summary>
+            <param name="id">Department id.</param>
+        </member>
+        <member name="T:Day1.Migrations.AddIdentityAndJwtAuth">
+            <inheritdoc />
+        </member>
+        <member name="M:Day1.Migrations.AddIdentityAndJwtAuth.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day1.Migrations.AddIdentityAndJwtAuth.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day1.Migrations.AddIdentityAndJwtAuth.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Day1.Migrations.AddCourseDepartmentRelation">
+            <inheritdoc />
+        </member>
+        <member name="M:Day1.Migrations.AddCourseDepartmentRelation.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day1.Migrations.AddCourseDepartmentRelation.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Day1.Migrations.AddCourseDepartmentRelation.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
